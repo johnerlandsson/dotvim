@@ -23,8 +23,10 @@ ln -s ~/.vim/tmux.conf ~/.tmux.conf
 #####################################################################################################################
 
 # Update submodules
-git submodule init
-git submodule update
+git submodule update --init --recursive
+
+# Install YouCompleteMe
+~/.vim/bundle/YouCompleteMe/install.py
 
 # Create tags for OmniCppComplete c++ autocomplete plugin
 mkdir ~/.vim/tags

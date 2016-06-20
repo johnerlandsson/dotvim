@@ -1,6 +1,10 @@
 " Make pathogen work
 execute pathogen#infect()
 
+" YouCompleteMe options
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 " Netrw options
 let g:netrw_altv = 1
 let g:netrw_banner = 0
