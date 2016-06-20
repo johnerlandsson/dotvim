@@ -41,3 +41,9 @@ let mapleader = ','
 
 " Turn of python indentation by default
 let g:pymode_indent = 0
+
+" Doxygen toolkit options
+let g:DoxygenToolkit_authorName="John Erlandsson <john@lunatech.se>"
+
+" YouCompleteMe options
+let g:ycm_confirm_extra_conf = 0
