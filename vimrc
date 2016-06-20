@@ -8,7 +8,6 @@ let g:netrw_browse_split = 4
 let g:netrw_liststyle = 3
 let g:netrw_winsize = -28
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro rnu'  " --> I want line numbers on the netrw buffer
-"nnoremap <silent> <leader>k :Lexplore<cr>
 nnoremap <silent> <C-n> :Lexplore<cr>
 
 " General purpose settings
@@ -36,3 +35,5 @@ set spell
 " Map <leader> to ,
 let mapleader = ','
 
+" Turn of python indentation by default
+let g:pymode_indent = 0
