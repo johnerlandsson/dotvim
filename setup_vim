@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#####################################################################################################################
+# Create directories
+#####################################################################################################################
+mkdir -p ~/.vim
+mkdir -p ~/.vim/autoload
+mkdir -p ~/.vim/bundle
+
+#####################################################################################################################
+# Install pathogen
+#####################################################################################################################
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+#####################################################################################################################
+# Create symbolic links to dotfiles
+#####################################################################################################################
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/tmux.conf ~/.tmux.conf
+
+#####################################################################################################################
+# Install plugins
+#####################################################################################################################
+
+
+# Create tags for OmniCppComplete c++ autocomplete plugin
+mkdir ~/.vim/tags
+cd ~/.vim/tags
+archive_name="cpp_src.tar.bz2"
+wget http://www.vim.org/scripts/download_script.php?src_id=9178 -O $archive_name
+tar xjf $archive_name
+rm -f $archive_name
+ctags -R --sort=1 --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f cpp cpp_src
+ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f gl /usr/include/GL/   # for OpenGL
+ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f sdl /usr/include/SDL/ # for SDL
+ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ -f qt4 /usr/include/qt4/ # for QT4
