@@ -3,6 +3,7 @@
 % Last Change: tis jun 21 04:00  2016 C
 %
 \documentclass[a4paper]{report}
+\usepackage{tabularx}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -12,45 +13,63 @@
     urlcolor=black
 }
 
+\def \tablewidth {9cm}
+
 \begin{document}
 \tableofcontents
 \newpage
+
 \section{Spelling}
-\begin{tabular}{| l | r |}
+\begin{tabularx}{\tablewidth}{| X | l |}
   \hline
   Find next misspelled word & ]s \\
   Find previous misspelled word & [s \\
   Get suggenstions for misspelled word & z= \\
   \hline
-\end{tabular}
+\end{tabularx}
 
 \section{Latex}
-\begin{tabular}{| l | r |}
+\begin{tabularx}{\tablewidth}{| X | l |}
   \hline
   Insert template & :TTemplate \\
   Compile & ,ll \\
   View output & ,lv\\
   \hline
-\end{tabular}
+\end{tabularx}
 
 \section{Comments}
-\begin{tabular}{| l | r |}
+\begin{tabularx}{\tablewidth}{| X | l |}
   \hline
   Comment out line & ,cc \\
   Uncomment line & ,cu \\
   Toggle comment & ,c\textless space\textgreater \\
   Comment out block with formatting & ,cs \\
   \hline
-\end{tabular}
+\end{tabularx}
 
 \section{Git}
-\begin{tabular}{| l | r |}
+\begin{tabularx}{\tablewidth}{| X | l |}
   \hline
   Add current file & :Git add \% \\
   Show blame for current file & :Gblame \\
-  Commit with message & :Gcommit -m Message" \\
+  Commit with message & :Gcommit -m ``Message'' \\
   \hline
-\end{tabular}
+\end{tabularx}
+
+\section{Doxygen}
+\begin{tabularx}{\tablewidth}{| X | l |}
+  \hline
+  Document function under cursor & :Dox \\
+  \hline
+\end{tabularx}
+
+\section{Autocomplete}
+\begin{tabularx}{\tablewidth}{| X | l |}
+  \hline
+  Scroll down in list & \textless Ctrl\textgreater k \\
+  Scroll up in list & \textless Ctrl\textgreater j \\
+  \hline
+\end{tabularx}
 
 \end{document}
 
