@@ -3,9 +3,19 @@
 % Last Change: tis jun 21 04:00  2016 C
 %
 \documentclass[a4paper]{report}
-\begin{document}
-\section{Spelling}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
+\begin{document}
+\tableofcontents
+\newpage
+\section{Spelling}
 \begin{tabular}{| l | r |}
   \hline
   Find next misspelled word & ]s \\
@@ -14,12 +24,31 @@
   \hline
 \end{tabular}
 
-\section{latex}
+\section{Latex}
 \begin{tabular}{| l | r |}
   \hline
   Insert template & :TTemplate \\
   Compile & ,ll \\
   View output & ,lv\\
+  \hline
+\end{tabular}
+
+\section{Comments}
+\begin{tabular}{| l | r |}
+  \hline
+  Comment out line & ,cc \\
+  Uncomment line & ,cu \\
+  Toggle comment & ,c\textless space\textgreater \\
+  Comment out block with formatting & ,cs \\
+  \hline
+\end{tabular}
+
+\section{Git}
+\begin{tabular}{| l | r |}
+  \hline
+  Add current file & :Git add \% \\
+  Show blame for current file & :Gblame \\
+  Commit with message & :Gcommit -m Message" \\
   \hline
 \end{tabular}
 
