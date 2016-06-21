@@ -1,3 +1,5 @@
 Bezier
 make_bezier_helix
 bezier
+setspell sv_utf8
+set spellang=sv_utf8
