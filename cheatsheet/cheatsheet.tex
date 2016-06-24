@@ -13,7 +13,7 @@
     urlcolor=black
 }
 
-\def \tablewidth {9cm}
+\def \tablewidth {10cm}
 
 \begin{document}
 \tableofcontents
@@ -25,6 +25,7 @@
   Find next misspelled word & ]s \\
   Find previous misspelled word & [s \\
   Get suggenstions for misspelled word & z= \\
+  Set language & :set spelllang=sv \\
   \hline
 \end{tabularx}
 
@@ -71,10 +72,21 @@
   \hline
 \end{tabularx}
 
+\section{C++}
+\begin{tabularx}{\tablewidth}{| X | l |}
+  \hline
+  Switch between header/source & \textless F4\textgreater \\
+  Create doxygen comment & \textless F6\textgreater \\
+  Build using makeprg & \textless F7\textgreater \\
+  Clean build using makeprg & \textless Shift\textgreater \textless F7\textgreater \\
+  Goto definition & \textless F12\textgreater \\
+  \hline
+\end{tabularx}
+
 \section{Tricks}
 \begin{tabularx}{\tablewidth}{| X | l |}
   \hline
-  Paste last search when in command mode & \textgreater Ctrl\textless \\
+  Paste last search when in command mode & \textless Ctrl\textgreater r \\
   Lowercase line & guu \\
   Uppercase line & gUU \\
   Delete rest of line from cursor & D \\
