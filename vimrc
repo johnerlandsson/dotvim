@@ -51,3 +51,6 @@ let g:ycm_confirm_extra_conf = 0
 " Remap keys for scrolling autocomplete box
 let g:ycm_key_list_select_completion = ['<C-j>']
 let g:ycm_key_list_previous_completion = ['<C-k>']
+
+" Clang-format options
+let g:clang_format#code_style = 'google'
