@@ -1,8 +1,3 @@
-" VIM Configuration File
-" Description: Optimized for C/C++ development, but useful also for other things.
-" Author: Gerhard Gappmeier
-"
-
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
@@ -31,13 +26,8 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
-" Setup YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-
 " Enhanced keyboard mappings
 "
-" Format code
-nnoremap <leader>y :ClangFormat<CR>
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again
