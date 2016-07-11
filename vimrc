@@ -54,3 +54,12 @@ let g:ycm_key_list_previous_completion = ['<C-k>']
 
 " Clang-format options
 let g:clang_format#code_style = 'google'
+
+" Go to next buffer
+map gn :bn<cr>
+" Go to previous buffer
+map gp :bp<cr>
+" Go back to last buffer
+map gb :b#<cr>
+" Close all buffers except the current one
+map gdo :Bonly<cr>
