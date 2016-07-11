@@ -40,3 +40,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/valgrind.vim"]
+	path = bundle/valgrind.vim
+	url = https://github.com/vim-scripts/valgrind.vim.git
