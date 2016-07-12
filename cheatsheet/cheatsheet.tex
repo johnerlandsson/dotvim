@@ -80,10 +80,16 @@
   Build using makeprg & \textless F7\textgreater \\
   Clean build using makeprg & \textless Shift\textgreater \textless F7\textgreater \\
   Goto definition & \textless F12\textgreater \\
-  Reformat code to fit google's codestyle & :Clang-format \\
+  Reformat code to fit google's codestyle & ,y \\
   \hline
 \end{tabularx}
 
+\section{Python}
+\begin{tabularx}{\tablewidth}{| X | l |}
+  \hline
+  Reformat code using ycm & ,y \\
+  \hline
+\end{tabularx}
 \section{File browsing}
 \begin{tabularx}{\tablewidth}{| X | l |}
   \hline
@@ -107,6 +113,28 @@
   Go to previous buffer & gp \\
   Go back to last buffer & gb \\
   Close all buffers except current one & gdo \\
+  \hline
+\end{tabularx}
+
+\section{Searching}
+\begin{tabularx}{\tablewidth}{| X | l |}
+  \hline
+  Very magic search & \textbackslash v \\
+  Substitute with confirmation & :\%s/foo/bar/c \\
+  Make search case sensitive & \textbackslash C \\
+  Make search case insensitive & \textbackslash c \\
+  \hline
+\end{tabularx}
+
+\section{Folding}
+\begin{tabularx}{\tablewidth}{| X | l |}
+  \hline
+  Fold next three lines (manual folding) & zf3j \\
+  Enable syntax based folding & :setlocal foldmethod=syntax \\
+  Close fold & zc \\
+  Open fold & zo \\
+  Open all folds & zR \\
+  Close all folds & zM \\
   \hline
 \end{tabularx}
 
