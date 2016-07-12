@@ -1,6 +1,14 @@
 " Make pathogen work
 execute pathogen#infect()
 
+" Use vim settings (not vi)
+set nocompatible
+
+" Enable mouse
+if has('mouse')
+  set mouse=a
+endif
+
 " YouCompleteMe options
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
@@ -19,13 +27,6 @@ filetype on
 filetype plugin indent on
 set number
 set relativenumber
-
-" vim-latex settings
-let g:tex_flavor='latex'
-au FileType tex set sw=2
-au FileType tex setlocal spell spelllang=en_gb
-let g:Tex_DefaultTargetFormat='pdf'
-let g:Tex_MultipleCompileFormats='dvi,pdf'
 
 "localvimrc settings
 let g:localvimrc_ask = 0

@@ -7,8 +7,6 @@
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
-" disable vi compatibility (emulation of old bugs)
-set nocompatible
 " use indentation of previous line
 set autoindent
 " use intelligent indentation for C
@@ -30,9 +28,6 @@ set relativenumber
 set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
-
-" Setup YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " Enhanced keyboard mappings
 "
