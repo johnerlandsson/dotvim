@@ -71,3 +71,13 @@ map gdo :Bonly<cr>
 
 " Make :Q behave like :q
 command Q quit
+
+" Enable airline plugin
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+set guifont=Menlo\ Regular:h20
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python powerline del powerline_setup
+set laststatus=2
+set t_Co=256
