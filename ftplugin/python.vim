@@ -36,3 +36,6 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 
 nnoremap <leader>y :0,$!yapf<Cr>
+
+" Set foldmethod
+set foldmethod=syntax

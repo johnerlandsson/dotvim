@@ -64,3 +64,6 @@ map gp :bp<cr>
 map gb :b#<cr>
 " Close all buffers except the current one
 map gdo :Bonly<cr>
+
+" Make :Q behave like :q
+command Q quit
