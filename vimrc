@@ -4,9 +4,13 @@ execute pathogen#infect()
 " Use vim settings (not vi)
 set nocompatible
 
+" Send more characters for redraws
+set ttyfast
+
 " Enable mouse
 if has('mouse')
   set mouse=a
+  set ttymouse=xterm2
 endif
 
 " YouCompleteMe options
