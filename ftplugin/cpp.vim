@@ -29,6 +29,12 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
+" Automatically close curly braces
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+
 " Enhanced keyboard mappings
 "
 " Format code

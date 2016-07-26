@@ -26,6 +26,12 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
+" Automatically close curly braces
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+
 " Enhanced keyboard mappings
 "
 " in normal mode F2 will save the file
@@ -33,7 +39,7 @@ nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again
 imap <F2> <ESC>:w<CR>i
 " switch between header/source with F4
-map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+map <F4> :e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 " recreate tags file with F5
 map <F5> :!ctags -R –c++-kinds=+p –fields=+iaS –extra=+q .<CR>
 " create doxygen comment

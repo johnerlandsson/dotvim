@@ -72,12 +72,22 @@ map gdo :Bonly<cr>
 " Make :Q behave like :q
 command Q quit
 
+" Setup valgrind arguments
+let g:valgrind_arguments="-v --num-callers=500 --leak-check=full --show-leak-kinds=all"
+
 " Enable airline plugin
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set guifont=Menlo\ Regular:h20
+
 "python from powerline.vim import setup as powerline_setup
 "python powerline_setup()
 "python powerline del powerline_setup
-set laststatus=2
-set t_Co=256
+ set laststatus=2
+ set t_Co=256
+
+if &term =~ '256color'
+    set t_ut=
+endif
+
+runtime! ftplugin/man.vim
