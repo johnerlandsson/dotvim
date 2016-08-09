@@ -34,6 +34,8 @@ inoremap {}     {}
 
 " Enhanced keyboard mappings
 "
+" Format code
+nnoremap <leader>y :ClangFormat<CR>
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again

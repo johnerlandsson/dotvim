@@ -31,3 +31,5 @@ if [ -f `which powerline-daemon` ]; then
 	POWERLINE_BASH_SELECT=1
 	. /usr/share/powerline/bash/powerline.sh
 fi
+
+fortune

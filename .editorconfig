@@ -1,0 +1,12 @@
+;.editorconfig
+;Config file for jsbeautify
+
+[**.js]
+indent_style = space
+indent_size = 2
+max_char = 78
+
+[**.html]
+indent_style = space
+indent_size = 4
+max_char = 78
