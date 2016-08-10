@@ -18,6 +18,7 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
 ln -s ~/.vim/bashrc ~/.bashrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
 
 #####################################################################################################################
 # Install plugins
