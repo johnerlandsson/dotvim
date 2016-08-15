@@ -91,3 +91,6 @@ if &term =~ '256color'
 endif
 
 runtime! ftplugin/man.vim
+
+
+let g:tex_flavor='latex'
