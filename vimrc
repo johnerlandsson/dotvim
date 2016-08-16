@@ -18,13 +18,16 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Netrw options
-let g:netrw_altv = 1
-let g:netrw_banner = 0
-let g:netrw_browse_split = 4
-let g:netrw_liststyle = 3
-let g:netrw_winsize = -28
-let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro rnu'  " --> I want line numbers on the netrw buffer
-nnoremap <silent> <C-n> :Lexplore<cr>
+"let g:netrw_altv = 1
+"let g:netrw_banner = 0
+"let g:netrw_browse_split = 4
+"let g:netrw_liststyle = 3
+"let g:netrw_winsize = -28
+"let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro rnu'  " --> I want line numbers on the netrw buffer
+"nnoremap <silent> <C-n> :Lexplore<cr>
+"
+" NERDTree options
+map <C-n> :NERDTreeToggle<CR>
 
 " General purpose settings
 filetype on
