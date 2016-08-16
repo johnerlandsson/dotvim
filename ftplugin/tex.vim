@@ -12,3 +12,5 @@ let g:Tex_MultipleCompileFormats='dvi,pdf'
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
+
+nnoremap <leader>y :0,$!texpretty --no-comment-banner 2> /dev/null<cr>
