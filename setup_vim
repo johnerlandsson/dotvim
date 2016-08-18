@@ -31,4 +31,4 @@ git submodule update --init --recursive
 ~/.vim/bundle/YouCompleteMe/install.py --clang-completer
 
 # Run helptags
-vim -c ":Helptags"
+vim -c ":Helptags" -c ":q"
