@@ -79,6 +79,7 @@ set t_Co=256
 if &term =~ '256color'
     set t_ut=
 endif
+color moriarty
 
 runtime! ftplugin/man.vim
 let g:tex_flavor='latex'
