@@ -35,6 +35,9 @@ inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
 
+"Enhanced highlight options
+let g:cpp_class_scope_highlight = 1
+
 " Enhanced keyboard mappings
 "
 " Format code
