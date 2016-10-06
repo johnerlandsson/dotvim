@@ -1,9 +1,12 @@
+" VIM Configuration File
+" Description: Optimized for C/C++ development, but useful also for other things.
+" Author: Gerhard Gappmeier
+"
+
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
-" disable vi compatibility (emulation of old bugs)
-set nocompatible
 " use indentation of previous line
 set autoindent
 " use intelligent indentation for C
@@ -41,11 +44,7 @@ nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again
 imap <F2> <ESC>:w<CR>i
 " switch between header/source with F4
-map <F4> :e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
-" recreate tags file with F5
-map <F5> :!ctags -R –c++-kinds=+p –fields=+iaS –extra=+q .<CR>
-" create doxygen comment
-map <F6> :Dox<CR>
+map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 " build using makeprg with <F7>
 map <F7> :make<CR>
 " build using makeprg with <S-F7>

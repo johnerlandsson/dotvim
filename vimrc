@@ -17,15 +17,6 @@ endif
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-" Netrw options
-"let g:netrw_altv = 1
-"let g:netrw_banner = 0
-"let g:netrw_browse_split = 4
-"let g:netrw_liststyle = 3
-"let g:netrw_winsize = -28
-"let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro rnu'  " --> I want line numbers on the netrw buffer
-"nnoremap <silent> <C-n> :Lexplore<cr>
-"
 " NERDTree options
 map <C-n> :NERDTreeToggle<CR>
 
@@ -83,17 +74,17 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set guifont=Menlo\ Regular:h20
 
-"python from powerline.vim import setup as powerline_setup
-"python powerline_setup()
-"python powerline del powerline_setup
- set laststatus=2
- set t_Co=256
-
+" Color options
+set t_Co=256
 if &term =~ '256color'
     set t_ut=
 endif
 
 runtime! ftplugin/man.vim
-
-
 let g:tex_flavor='latex'
+
+" Create tags
+nnoremap <F5> :VimuxRunCommand("ctags -R .")<CR>
+
+" Create doxygen comment
+map <F6> :Dox<CR>
