@@ -85,7 +85,11 @@ runtime! ftplugin/man.vim
 let g:tex_flavor='latex'
 
 " Create tags
-nnoremap <F5> :VimuxRunCommand("ctags -R .")<CR>
+if exists('$TMUX')
+    nnoremap <F5> :VimuxRunCommand("ctags -R .")<CR>
+else
+    nnoremap <F5> :!ctags -R<CR>
+endif
 
 " Create doxygen comment
 map <F6> :Dox<CR>
