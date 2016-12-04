@@ -1,3 +1,4 @@
+
 " Turn on syntax highlighting
 syntax on
 
@@ -77,6 +78,13 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set guifont=Menlo\ Regular:h20
 
+" Enable powerline
+let g:pymode_python = 'python3'
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+set laststatus=2
+
 " Color options
 set t_Co=256
 if &term =~ '256color'
@@ -95,4 +103,5 @@ else
 endif
 
 " Create doxygen comment
+
 map <F6> :Dox<CR>
