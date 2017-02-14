@@ -7,10 +7,11 @@ set sw=2
 setlocal spell spelllang=en_gb
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats='dvi,pdf'
+let g:Tex_CompileRule_pdf='xelatex -interaction=nonstopmode $*'
 
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
 
-nnoremap <leader>y :0,$!texpretty --no-comment-banner 2> /dev/null<cr>
+nnoremap <leader>y :0,$!texpretty --width 128 --indent 2 --no-comment-banner 2> /dev/null<cr>

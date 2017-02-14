@@ -96,3 +96,16 @@ endif
 
 " Create doxygen comment
 map <F6> :Dox<CR>
+
+" Detect heidenhain file
+function Heidenhain_Klartext_ftdetect()
+    if getline(1) =~ 'BEGIN\s*PGM.*\(INCH\|MM\)'
+    setlocal filetype=heidenhain
+    endif
+endfunction
+
+autocmd BufRead *.NC call Heidenhain_Klartext_ftdetect()
+autocmd BufRead *.nc call Heidenhain_Klartext_ftdetect()
+autocmd BufRead *.H call Heidenhain_Klartext_ftdetect()
+autocmd BufRead *.h call Heidenhain_Klartext_ftdetect()
+autocmd BufRead *.txt call Heidenhain_Klartext_ftdetect()
