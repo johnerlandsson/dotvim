@@ -80,9 +80,9 @@ set guifont=Menlo\ Regular:h20
 
 " Enable powerline
 "let g:pymode_python = 'python3'
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
 set laststatus=2
 
 " Color options
@@ -105,6 +105,14 @@ endif
 " Create doxygen comment
 
 map <F6> :Dox<CR>
+
+" Mappings for moving lines up and down
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Detect heidenhain file
 function Heidenhain_Klartext_ftdetect()
