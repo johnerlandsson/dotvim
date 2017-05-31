@@ -114,6 +114,10 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+" Use very magic by default
+:nnoremap / /\v
+:cnoremap %s/ %s/\v
+
 " Detect heidenhain file
 function Heidenhain_Klartext_ftdetect()
     if getline(1) =~ 'BEGIN\s*PGM.*\(INCH\|MM\)'

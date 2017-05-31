@@ -76,3 +76,6 @@
 [submodule "tmux-themes/tmux-themepack"]
 	path = tmux-themes/tmux-themepack
 	url = https://github.com/jimeh/tmux-themepack.git
+[submodule "bundle/VimRegexTutor"]
+	path = bundle/VimRegexTutor
+	url = git@github.com:dahu/VimRegexTutor.git
