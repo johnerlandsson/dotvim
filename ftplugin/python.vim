@@ -35,7 +35,8 @@ if 'VIRTUAL_ENV' in os.environ:
     execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-nnoremap <leader>y :0,$!yapf<Cr>
+nnoremap <buffer> <leader>y :call Autopep8()<CR>
+"let g:autopep8_disable_show_diff=1
 
 " Set foldmethod
 set foldmethod=syntax

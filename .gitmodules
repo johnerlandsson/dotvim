@@ -79,3 +79,6 @@
 [submodule "bundle/VimRegexTutor"]
 	path = bundle/VimRegexTutor
 	url = git@github.com:dahu/VimRegexTutor.git
+[submodule "bundle/vim-autopep8"]
+	path = bundle/vim-autopep8
+	url = git@github.com:tell-k/vim-autopep8.git

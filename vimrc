@@ -1,4 +1,3 @@
-
 " Turn on syntax highlighting
 syntax on
 
@@ -76,7 +75,10 @@ let g:valgrind_arguments="-v --num-callers=500 --leak-check=full --show-leak-kin
 " Enable airline plugin
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-set guifont=Menlo\ Regular:h20
+
+if has('gui_running')
+  set guifont=Lucida_Console:h11
+endif
 
 " Enable powerline
 "let g:pymode_python = 'python3'
@@ -103,24 +105,11 @@ else
 endif
 
 " Create doxygen comment
-
 map <F6> :Dox<CR>
 
 " Mappings for moving lines up and down
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
-let c='a'
-while c <= 'z'
-  exec "set <A-".c.">=\e".c
-  exec "imap \e".c." <A-".c.">"
-  let c = nr2char(1+char2nr(c))
-endw
-
-set timeout ttimeoutlen=50
+"nnoremap <C-s-J> :m .+1<CR>==
+"nnoremap <C-s-K> :m .-2<CR>==
 
 " Use very magic by default
 :nnoremap / /\v
