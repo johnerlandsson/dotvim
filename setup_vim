@@ -29,7 +29,7 @@ ln -s ~/.vim/ctags ~/.ctags
 git submodule update --init --recursive
 
 # Install YouCompleteMe
-~/.vim/bundle/YouCompleteMe/install.py --clang-completer
+~/.vim/bundle/YouCompleteMe/install.py --clang-completer --system-libclang
 
 # Run helptags
 vim -c ":Helptags" -c ":q"
