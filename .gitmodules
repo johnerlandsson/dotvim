@@ -82,3 +82,6 @@
 [submodule "bundle/vim-autopep8"]
 	path = bundle/vim-autopep8
 	url = git@github.com:tell-k/vim-autopep8.git
+[submodule "bundle/nc.vim--Eno"]
+	path = bundle/nc.vim--Eno
+	url = git@github.com:vim-scripts/nc.vim--Eno.git
