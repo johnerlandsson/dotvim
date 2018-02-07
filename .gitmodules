@@ -82,6 +82,3 @@
 [submodule "bundle/vim-autopep8"]
 	path = bundle/vim-autopep8
 	url = git@github.com:tell-k/vim-autopep8.git
-[submodule "bundle/vim-nc"]
-	path = bundle/vim-nc
-	url = git@github.com:gregjurman/vim-nc.git
